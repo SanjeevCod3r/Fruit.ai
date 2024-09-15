@@ -1,0 +1,103 @@
+/* General styling for the About component */
+.about-container {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background: none; /* Keep the default background color */
+    overflow: hidden;
+  }
+  
+  /* Click Me button centered, big and bold */
+  .click-me-button {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .click-me-button:hover {
+    background-color: #444;
+  }
+  
+  /* Popup about section styling */
+  .about-section {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .about-section.open {
+    bottom: 0;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Close button styling inside the popup */
+  .close-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  .close-button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .about-section {
+      height: 70%;
+    }
+  
+    .click-me-button {
+      font-size: 1.5rem;
+    }
+  
+    .about-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-content p {
+      font-size: 1rem;
+    }
+  }
+  

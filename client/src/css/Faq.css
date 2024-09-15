@@ -1,0 +1,78 @@
+/* General layout for the FAQ container */
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f7fa;
+}
+
+/* Title styling */
+.faq-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+}
+
+/* Layout for the FAQ cards */
+.faq-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .faq-list {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Individual FAQ card styling */
+.faq-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.faq-card:hover {
+  transform: translateY(-10px);
+}
+
+/* FAQ image styling */
+.faq-card img {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* FAQ question styling */
+.faq-question {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+/* FAQ answer styling */
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Spacing for the FAQ cards */
+.faq-card + .faq-card {
+  margin-top: 20px;
+}

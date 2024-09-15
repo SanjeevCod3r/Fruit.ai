@@ -1,0 +1,29 @@
+
+Run Frontented Code:
+cd ./client
+npm install
+npm start
+
+
+Run Backend Code:
+cd ./server
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+uvicorn app.main:app --reload
+
+
+Github Link:
+https://github.com/SanjeevCod3r/Fruit.ai.git
+
+Drive Link:
+https://drive.google.com/drive/folders/16-U65xO6WwAPqzj7LlzpRoRh6kqL-FF9?usp=drive_link
+
+
+Backend deploy link:
+https://fruitai-server3.onrender.com/
+
+Frontented deploy link:
+https://fruit-ai-client.vercel.app/
+

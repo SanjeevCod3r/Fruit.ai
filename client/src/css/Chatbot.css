@@ -1,0 +1,139 @@
+/* Full-screen layout with profile section */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .chat-fullscreen-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f4f4f4;
+    position: relative;
+  }
+  
+  .chat-header {
+    padding: 15px;
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-email {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  
+  .chat-bubble {
+    max-width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    word-wrap: break-word;
+  }
+  
+  .user-bubble {
+    background-color:pink;
+    align-self: flex-end;
+  }
+  
+  .bot-bubble {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+  }
+  
+  .chat-input-section {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input-section input {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    margin-right: 10px;
+  }
+  
+  .chat-input-section button {
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  /* Responsive design for mobile devices */
+  @media screen and (max-width: 768px) {
+    .chat-bubble {
+      max-width: 80%;
+    }
+  
+    .chat-header {
+      font-size: 20px;
+    }
+  
+    .chat-input-section input, .chat-input-section button {
+      padding: 12px;
+    }
+  
+    .profile-pic {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .chat-bubble {
+      max-width: 90%;
+    }
+  
+    .chat-header {
+      font-size: 18px;
+    }
+  
+    .chat-input-section input, .chat-input-section button {
+      padding: 10px;
+    }
+  
+    .profile-pic {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: fruit-ai-backend
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: |
+      uvicorn app.main:app --host 0.0.0.0 --port 8000
+    publishDirectory: .
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://school:school%401234@cluster0.m7ddn.mongodb.net/school?retryWrites=true&w=majority
+      - key: MONGO_DB_NAME
+        value: Fruit
